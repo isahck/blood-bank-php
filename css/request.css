@@ -1,0 +1,45 @@
+.table-resposive
+{
+  position: relative;
+  transform: translateX(-50%,-50%);
+  box-shadow: inset 0px 0px 20px var(--secondary);
+  padding: 10px 30px;
+  width: 1000px;
+  text-align: center;
+  color: var(--secondary);
+  margin: 40px 100px;
+}
+.table-resposive table
+{
+  overflow-x: scroll;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+.table-resposive .table-row
+{
+  margin: 10px 0;
+  border: 1px solid red;
+}
+td + .pending
+{
+  background: var(--pending);
+  padding: 5px 10px;
+  color: var(--primary);
+  margin: 10px 0;
+}
+table .edit
+{
+  padding: 5px 10px;
+  background: var(--strong);
+  color: var(--primary);
+  margin: 10px 0;
+}
+table .delete
+{
+  padding: 5px 10px;
+  background: var(--secondary);
+  color: var(--primary);
+  margin: 10px 0;
+}

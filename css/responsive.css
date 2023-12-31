@@ -1,0 +1,90 @@
+@media (max-width: 700px){ 
+
+  .top-bar nav ul {
+    position: absolute;
+    right: -200px;
+    height: 100vh;
+    background: var(--secondary);
+    width: 200px;
+    text-align: left;
+  }
+  .top-bar nav ul li 
+  {
+    margin-top: 40px;
+    display: block;
+  }
+  .show-menu
+  {
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    color: var(--primary);
+  }
+  .close-icon
+  {
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    color: var(--primary);
+  }
+  .form
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .col-form .bookimage
+  {
+    display: none;
+  }
+  .login-box
+  {
+    flex-direction: column;
+    width: auto;
+  }  
+  .login-col .side-image
+  {
+    display: none ;
+  }
+  .login h2
+  {
+  font-size: 20px;
+  }
+
+  label
+  {
+  font-size: 15px;
+  }
+
+  .field input
+  {
+  font-size: 15px;
+  }.generate
+  {
+   flex-direction: column;
+  }
+  .generate button
+  {
+    margin: 10px auto;
+  }
+  input[type="submit"]
+  {
+    margin: 10px 0;
+  }
+  .links p
+  {
+    margin-top: 5px;
+  }
+  .table-resposive
+  {
+    overflow-x: scroll;
+    width: 100%;
+    margin: 40px 10px;
+  }
+  .table-resposive table
+  {
+    overflow-x: scroll;
+  }
+  
+}

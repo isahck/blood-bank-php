@@ -1,0 +1,44 @@
+.edit-model
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%,-50%);
+  background: var(--primary);
+  border: 2px solid var(--secondary);
+  padding: 30px;
+}
+.edit-model .edit-close
+{
+  color: var(--secondary);
+  font-size: 30px;
+}
+.edit h1
+{
+  text-align: center;
+  color: var(--secondary);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.edit-field
+{
+  position: relative;
+  height: 40px;
+  border: 1px solid var(--secondary);
+  margin: 10px 0;
+}
+.edit-field input
+{
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+  color: var(--secondary);
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+.edit-field ::placeholder
+{
+  color: var(--secondary);
+}

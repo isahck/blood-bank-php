@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+.homepage
+{
+  background: var(--white);
+  width: 100%;
+  height: 100%;
+}
+.homebar nav
+{
+  padding: 15px 20px;
+  background: var(--blue);
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15px rgba(red, green, blue, alpha);
+  position: static;
+  z-index: 10;
+  top: 0;
+}
+.homebar .logo
+{
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 15px;
+}
+#openbtn, .closebtn
+{
+  cursor: pointer;
+  color: var(--white);
+  font-size: 20px;
+  display: none;
+}
+nav ul li
+{
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+nav ul li a
+{
+  text-decoration: none;
+  color: var(--blue);
+  background: var(--white);
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 15px;
+} 
+.home-main
+{
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.home-main .home-col
+{
+  position: relative;
+  flex-basis: 50%;
+}
+.home-col p
+{
+  color: var(--blue);
+  font-size: 25px;
+  user-select: none;
+}
+.home-col .text-main
+{
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.home-col .text-main::after
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  height: 5px;
+  width: 100%;
+  background: var(--blue);
+}
+.home-col .know-more
+{
+  background: var(--blue);
+  color: var(--white);
+  padding: 8px 15px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 12px;
+}
+.home-image > img
+{
+  height: 100%;
+  width: 100%;
+}
+
+
+/*============= about section  =============*/
+.about
+{
+  background: var(--blue);
+  padding: 20px 30px;
+  position: relative;
+}
+.about .about-header{
+  text-align: center;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: var(--white);
+}
+.about .about-body
+{
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-body .about-col
+{
+  margin: 20px 30px;
+  position: relative;
+  flex-basis: 50%;
+}
+.about-col > img
+{
+  width: 100%;
+  height: 100%;
+}
+.about-col > p
+{
+  font-size: 25px;
+  color: var(--white);
+}
+.about-col .know-more
+{
+  background: var(--white);
+  color: var(--blue);
+  padding: 8px 15px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 12px;
+}
+
+
+
+/*============= contact section  =============*/
+.contact
+{
+  padding: 20px;
+}
+.contact .contact-header{
+  text-align: center;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: var(--blue);
+}
+
+.contact-form
+{
+  padding: 20px;
+  height: 500px;
+}
+.contact-form .contact-field
+{
+  padding: 8px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed var(--blue);
+  margin: 20px 0;
+}
+.contact-field > input
+{
+  text-transform: capitalize;
+  width: 100%;
+  color: var(--blue);
+  border: none;
+  font-size: 15px;
+}
+.contact-field ::placeholder
+{
+  color: var(--blue);
+}
+
+.contact-send > input
+{
+  background: var(--blue);
+  width: 100%;
+  padding: 8px;
+  color: var(--white);
+  outline: none;
+  border: none;
+}
+
+footer{
+  text-align: center; 
+  color: var(--white);
+  background: var(--blue); 
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+footer > a
+{
+  text-decoration: none;
+  color: var(--white);
+}
+
+/*========= responsibe =========*/
+@media (max-width: 700px){
+  nav ul
+  {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    width: 200px;
+    background: var(--blue);
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li 
+  {
+    margin: 25px;
+    display: block;
+  }
+  nav ul li a
+  {
+    background: transparent;
+    color: var(--white);
+  }
+
+  #openbtn
+  {
+    margin: 20px 40px;  
+    cursor: pointer;
+    color: var(--white);
+    font-size: 20px;
+    display: block;
+  }
+  .closebtn
+  {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    margin: 20px 40px;  
+    cursor: pointer;
+    color: var(--white);
+    font-size: 20px;
+    display: block;
+  }
+  .home-main
+  {
+    flex-direction: column;
+  }
+
+
+   /*==== about section  ====*/
+  .about .about-body
+  {
+    flex-direction: column;
+  }
+
+
+}
